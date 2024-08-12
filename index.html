@@ -9,6 +9,42 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .password-container, .content-container {
+    text-align: center;
+    display: none;
+  }
+
+  .password-container {
+    display: block;
+  }
+
+  .password-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover {
+    background-color: #555;
   }
 
   .navbar {
@@ -48,22 +84,46 @@
 </head>
 <body>
 
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="pages/characters.html">Characters</a>
-  <a href="https://quartermaester.info">Map</a>
-  <a href="pages/items.html">Items</a>
-  <a href="pages/organisation.html">Organisations</a>
-  <a href="pages/quests.html">Quests</a>
-  <a href="pages/weapons.html">Weapons</a>
-  <a href="pages/relations.html">Relationships</a>
-  <a href="pages/story.html">Story Arcs</a>
+<div class="password-container">
+    <input type="password" id="password" class="password-input" placeholder="Enter Password">
+    <button class="submit-btn" onclick="checkPassword()">Submit</button>
 </div>
 
-<div class="container">
-  <h1>Welcome to the Fantasy World</h1>
-  <p>Explore the world, meet the characters, and uncover the mysteries.</p>
+<div class="content-container">
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="pages/characters.html">Characters</a>
+    <a href="pages/map.html">Map</a>
+    <a href="pages/items.html">Items</a>
+    <a href="pages/organisation.html">Organisations</a>
+    <a href="pages/quests.html">Quests</a>
+    <a href="pages/weapons.html">Weapons</a>
+    <a href="pages/relations.html">Relationships</a>
+    <a href="pages/story.html">Story Arcs</a>
+    <a href="pages/beastiary.html">Beastiary</a>
+    <a href="pages/realms.html">Realms</a>
+    <a href="pages/enemies.html">Enemies</a>
+  </div>
+
+  <div class="container">
+    <h1>Welcome to the Fantasy World</h1>
+    <p>Explore the world, meet the characters, and uncover the mysteries.</p>
+  </div>
 </div>
+
+<script>
+    function checkPassword() {
+        const password = document.getElementById('password').value;
+        const correctPassword = 'ashfaaq'; // Replace this with your actual password
+
+        if (password === correctPassword) {
+            document.querySelector('.password-container').style.display = 'none';
+            document.querySelector('.content-container').style.display = 'block';
+        } else {
+            alert('Incorrect Password');
+        }
+    }
+</script>
 
 </body>
 </html>

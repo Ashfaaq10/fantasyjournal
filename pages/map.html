@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery Page</title>
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .container p {
+    font-size: 20px;
+    color: #555;
+  }
+  
+    .top-link {
+      text-align: center;
+      margin: 20px 0;
+    }
+  
+    .top-link a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #333;
+      background-color: #ddd;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  
+    .top-link a:hover {
+      background-color: #bbb;
+    }
+  
+    .gallery-item {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+  
+    .gallery-item img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  
+    .gallery-item h3 {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 36px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="pages/characters.html">Characters</a>
+          <a href="pages/map.html">Map</a>
+          <a href="pages/items.html">Items</a>
+          <a href="pages/organisation.html">Organisations</a>
+          <a href="pages/quests.html">Quests</a>
+          <a href="pages/weapons.html">Weapons</a>
+          <a href="pages/relations.html">Relationships</a>
+          <a href="pages/story.html">Story Arcs</a>
+          <a href="pages/beastiary.html">Beastiary</a>
+          <a href="pages/realms.html">Realms</a>
+          <a href="pages/enemies.html">Enemies</a>
+        </div>
+
+<div class="top-link">
+  <a href="https://quartermaester.info">Reference</a>
+</div>
+
+<div class="gallery-container">
+  <div class="gallery-item">
+    <img src="../map_images/Bria 2024-08-12-19-08.png" alt="Image 1">
+    <h3>Central Continent</h3>
+  </div>
+  <div class="gallery-item">
+    <img src="../map_images/Cheia 2024-08-12-19-04.png" alt="Image 2">
+    <h3>Southern Continent</h3>
+  </div>
+  <div class="gallery-item">
+    <img src="../map_images/Ingnoland 2024-08-12-22-45.png" alt="Image 3">
+    <h3>Western Continent</h3>
+  </div>
+  <div class="gallery-item">
+    <img src="../map_images/Lorte 2024-08-12-18-59.png" alt="Image 4">
+    <h3>Eastern Continent</h3>
+  </div>
+  <div class="gallery-item">
+    <img src="../map_images/Vilyia 2024-08-12-22-53.png" alt="Image 5">
+    <h3>Northern Continent</h3>
+  </div>
+</div>
+
+</body>
+</html>
