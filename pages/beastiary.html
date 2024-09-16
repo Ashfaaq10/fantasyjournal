@@ -35,29 +35,34 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -5px;
+    justify-content: space-between;
   }
 
-  .image-row .image-item {
+  .image-item {
     flex: 1 1 20%;
     padding: 5px;
     box-sizing: border-box;
+    max-width: 20%; /* Ensures each image doesn't exceed 20% width */
   }
 
-  .image-row .image-item img {
+  .image-item img {
     width: 100%;
     height: auto;
     display: block;
+    max-width: 100%;
   }
 
   @media (max-width: 768px) {
-    .image-row .image-item {
-      flex: 1 1 50%;
+    .image-item {
+      flex: 1 1 45%;
+      max-width: 45%; /* Adjusts max-width to 45% for 2 images per row */
     }
   }
 
   @media (max-width: 480px) {
-    .image-row .image-item {
-      flex: 1 1 100%;
+    .image-item {
+      flex: 1 1 90%;
+      max-width: 90%; /* Adjusts max-width to 90% for 1 image per row */
     }
   }
 </style>
@@ -217,6 +222,157 @@
                           </div>
                     
                         </div>
+
+                        <div class="container">
+                          <div class="image-row">
+                            <div class="image-item">
+                              <img src="../beastiary_images/afterburn-card-front.png" alt="Image 1">
+                            </div>
+                            <div class="image-item">
+                              <img src="../beastiary_images/x-100-card-front.png" alt="Image 2">
+                            </div>
+                            <div class="image-item">
+                              <img src="../beastiary_images/triplex-card-front.png" alt="Image 3">
+                            </div>
+                            <div class="image-item">
+                              <img src="../beastiary_images/shadowclaw-card-front.png" alt="Image 4">
+                            </div>
+                            <div class="image-item">
+                              <img src="../beastiary_images/swarmshock-card-front.png" alt="Image 5">
+                            </div>
+
+                            <div class="container">
+                              <div class="image-row">
+                                <div class="image-item">
+                                  <img src="../beastiary_images/staticjolt-card-front.png" alt="Image 1">
+                                </div>
+                                <div class="image-item">
+                                  <img src="../beastiary_images/tyrant-card-front.png" alt="Image 2">
+                                </div>
+                                <div class="image-item">
+                                  <img src="../beastiary_images/rivetclaw-card-front.png" alt="Image 3">
+                                </div>
+                                <div class="image-item">
+                                  <img src="../beastiary_images/vicegrip-card-front.png" alt="Image 4">
+                                </div>
+                                <div class="image-item">
+                                  <img src="../beastiary_images/biohound-card-front.png" alt="Image 5">
+                                </div>
+
+                                <div class="container">
+                                  <div class="image-row">
+                                    <div class="image-item">
+                                      <img src="../beastiary_images/iguano-card-front.png" alt="Image 1">
+                                    </div>
+                                    <div class="image-item">
+                                      <img src="../beastiary_images/mallus-card-front.png" alt="Image 2">
+                                    </div>
+                                    <div class="image-item">
+                                      <img src="../beastiary_images/ripsaw-card-front.png" alt="Image 3">
+                                    </div>
+                                    <div class="image-item">
+                                      <img src="../beastiary_images/lithos-card-front.png" alt="Image 4">
+                                    </div>
+                                    <div class="image-item">
+                                      <img src="../beastiary_images/turbine-card-front.png" alt="Image 5">
+                                    </div>
+                          
+                      
+                          </div>
+
+                        <main>
+                          <h2>The Demon Realm</h2>
+                         </main> 
+      
+                      </div>
+                      <div class="container">
+                          <div class="image-row">
+                            <div class="image-item">
+                              <img src="../beastiary_images/backlash-card-front.png" alt="Image 1">
+                            </div>
+                            <div class="image-item">
+                              <img src="../beastiary_images/dragonburn-card-front.png" alt="Image 2">
+                            </div>
+                            <div class="image-item">
+                              <img src="../beastiary_images/firewasp-card-front.png" alt="Image 3">
+                            </div>
+                            <div class="image-item">
+                              <img src="../beastiary_images/shadowhornet-card-front.png" alt="Image 4">
+                            </div>
+                            <div class="image-item">
+                              <img src="../beastiary_images/twinsting-card-front.png" alt="Image 5">
+                            </div>
+                      
+                          </div>
+
+                          <div class="container">
+                            <div class="image-row">
+                              <div class="image-item">
+                                <img src="../beastiary_images/sauro-card-front.png" alt="Image 1">
+                              </div>
+                              <div class="image-item">
+                                <img src="../beastiary_images/poisonwing-card-front.png" alt="Image 2">
+                              </div>
+                              <div class="image-item">
+                                <img src="../beastiary_images/firewalker-card-front.png" alt="Image 3">
+                              </div>
+                              <div class="image-item">
+                                <img src="../beastiary_images/snapclaw-card-front.png" alt="Image 4">
+                              </div>
+                              <div class="image-item">
+                                <img src="../beastiary_images/spikelash-card-front.png" alt="Image 5">
+                              </div>
+                        
+                            </div>
+
+                            <div class="container">
+                              <div class="image-row">
+                                <div class="image-item">
+                                  <img src="../beastiary_images/spiderwolf-card-front.png" alt="Image 1">
+                                </div>
+                                <div class="image-item">
+                                  <img src="../beastiary_images/thunderhoof-card-front.png" alt="Image 2">
+                                </div>
+                                <div class="image-item">
+                                  <img src="../beastiary_images/moonfire-card-front.png" alt="Image 3">
+                                </div>
+                                <div class="image-item">
+                                  <img src="../beastiary_images/toxixclaw-card-front.png" alt="Image 4">
+                                </div>
+                                <div class="image-item">
+                                  <img src="../beastiary_images/dragonwolf-card-front.png" alt="Image 5">
+                                </div>
+                          
+                              </div>
+
+                              <div class="container">
+                                <div class="image-row">
+                                  <div class="image-item">
+                                    <img src="../beastiary_images/duster-card-front.png" alt="Image 1">
+                                  </div>
+                                  <div class="image-item">
+                                    <img src="../beastiary_images/goldspear-card-front.png" alt="Image 2">
+                                  </div>
+                                  <div class="image-item">
+                                    <img src="../beastiary_images/spikebat-card-front.png" alt="Image 3">
+                                  </div>
+                                  <div class="image-item">
+                                    <img src="../beastiary_images/stingapede-card-front.png" alt="Image 4">
+                                  </div>
+                                  <div class="image-item">
+                                    <img src="../beastiary_images/freedomstriker-card-front.png" alt="Image 5">
+                                  </div>
+                            
+                                </div>
+
+                                <div class="container">
+                                  <div class="image-row">
+                                    <div class="image-item">
+                                      <img src="../beastiary_images/sizzler-card-front.png" alt="Image 1">
+                                    </div>
+
+                                  </div>
+                                  </div>
 <!-- 
   <div class="image-row">
     <div class="image-item">
